@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe FakeHashWrapper do
   describe '#[]()' do
     it 'should allow you to set values in the hash' do

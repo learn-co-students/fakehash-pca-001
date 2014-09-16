@@ -1,5 +1,5 @@
 ---
-  tags: arrays, iteration, object orientation
+  tags: hashes, iteration, object orientation
   languages: ruby
 ---
 
