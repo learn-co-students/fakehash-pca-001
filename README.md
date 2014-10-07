@@ -59,4 +59,4 @@ fall_televison[:cwtv]
 This is a test-driven lab so run `rspec` to get started.
 
 ## Resources
-* [Learn Ruby the Hard Way](http://ruby.learncodethehardway.org/) -[Modules, Classes, and Objects](http://ruby.learncodethehardway.org/book/ex40.html)
+* [Learn Ruby the Hard Way](http://ruby.learncodethehardway.org/) - [Modules, Classes, and Objects](http://ruby.learncodethehardway.org/book/ex40.html)
