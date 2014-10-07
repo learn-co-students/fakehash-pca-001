@@ -19,4 +19,10 @@ class FakeHashWrapper
   def first_letter(letter)
     elements.values.select {|value| (elements.key(value))[0] == letter}
   end
+
+  def each
+    elements.each do |k,v|
+      yield(k,v)
+    end
+  end
 end
