@@ -40,7 +40,7 @@ describe FakeHashWrapper do
   end
 
   describe '#each' do
-    it "should let you iterate just like a normal array" do
+    it "should let you iterate just like a normal hash" do
       fall_television = FakeHashWrapper.new
       fall_television[:nbc] = "Selfie"
       fall_television[:amc] = "Walking Dead"
