@@ -38,4 +38,21 @@ describe FakeHashWrapper do
       end
     end
   end
+
+  describe '#each' do
+    it "should let you iterate just like a normal array" do
+      fall_television = FakeHashWrapper.new
+      fall_television[:nbc] = "Selfie"
+      fall_television[:amc] = "Walking Dead"
+      fall_television[:cbs] = "Scorpion"
+      
+      expect($stdout).to receive(:puts).with("Selfie")
+      expect($stdout).to receive(:puts).with("Walking Dead")
+      expect($stdout).to receive(:puts).with("Scorpion")
+      
+      fall_television.each do |k,v|
+        puts v
+      end
+    end
+  end
 end
