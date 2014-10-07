@@ -31,7 +31,11 @@ describe FakeHashWrapper do
       fake[:apples] = 'wormy'
       fake[:anteaters] = 'i like them'
       fake[:balls] = 'why'
-      expect(fake.first_letter('a')).to eq(['wormy', 'i like them'])
+      expect(fake.first_letter('a').class).to eq(Array)
+      expect(fake.first_letter('a').length).to eq(2)
+      ['wormy', 'i like them'].each do |string|
+        expect(fake.first_letter('a')).to include(string)
+      end
     end
   end
 end
