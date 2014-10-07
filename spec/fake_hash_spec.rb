@@ -1,12 +1,12 @@
 describe FakeHashWrapper do
   describe '#[]()' do
-    it 'should allow you to set values in the hash' do
+    it 'allows you to set values in the hash' do
       fake = FakeHashWrapper.new
       fake[:blake] = 'the best'
       expect(fake[:blake]).to eq('the best')
     end
 
-    it 'should return values regardless of whether they are strings or symbols' do
+    it 'returns values regardless of whether they are strings or symbols' do
       fake = FakeHashWrapper.new
       fake[:blake] = 'the best'
       fake['anisha'] = 'awesome'
@@ -16,7 +16,7 @@ describe FakeHashWrapper do
   end
 
   describe '#keys' do
-    it 'should return all the keys in the hash in a descending alphabetized array' do
+    it 'returns all the keys in the hash in a descending alphabetized array' do
       fake = FakeHashWrapper.new
       fake[:giraffes] = 'cute'
       fake[:cats] = 'the best'
@@ -26,7 +26,7 @@ describe FakeHashWrapper do
   end
 
   describe '#first_letter' do
-    it 'should return all the values that have keys beginning with a certain letter' do
+    it 'returns all the values that have keys beginning with a certain letter' do
       fake = FakeHashWrapper.new
       fake[:apples] = 'wormy'
       fake[:anteaters] = 'i like them'
@@ -40,7 +40,7 @@ describe FakeHashWrapper do
   end
 
   describe '#each' do
-    it "should let you iterate just like a normal hash" do
+    it "allows you to iterate just like a normal hash" do
       fall_television = FakeHashWrapper.new
       fall_television[:nbc] = "Selfie"
       fall_television[:amc] = "Walking Dead"
