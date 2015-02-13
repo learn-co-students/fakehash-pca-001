@@ -1,5 +1,5 @@
 ---
-tags: hashes, iteration, object orientation
+tags: hashes, iteration, object orientation, bonus
 languages: ruby
 resources: 1
 ---
